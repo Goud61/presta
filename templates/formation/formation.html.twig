@@ -1,0 +1,183 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormationController!{% endblock %}
+
+{% block container %}
+        
+<body class="mt-5">
+    {% include "_baseparts/_nav.html.twig" %}
+    {% block body %}
+    
+    
+
+        <div class="container-fluid">   
+            <div class="row">
+                <div class="col-2 bg-success px-8"> <!-- Supprime padding - Pour coller au bloc main-->
+                    {% include "_partials/_sidebar.html.twig" %}
+                    {% block nav %}
+                        <img class="img-fluid" src="{{ asset('/assets/images/photo_vik.jpg')}}">
+                        <ul>
+                                          <!-- Background image --> 
+                            <li>
+                                <p> FORMATION  </p>
+                            </li>
+                            <li>
+                                <p> FORMATION  </p>
+                            </li>
+                            <li>
+                                <p> LANGUES  </p>
+                            </li>
+                        </ul>
+                    {% endblock %} 
+            
+                </div>
+                    <div class="col-10 bg-light px-5"> <!-- Supprime padding - Pour coller au bloc main-->
+                    
+                    {% block main %}
+                        <main> <!--section> class="px-5 py-4" class="bg-image" style="background-image: url('/assets/images/orchidee-en-fleursM.jpg');
+                            height: 100vh;"-->  
+                            {% block section %} 
+                            <div class="row">
+                                
+                                <div>
+                                    <ul class="list-group list-group-horizontal position-center">  
+                                        <li class="list-group-item">VICTOR GOUDOU </li>
+                                        <li class="list-group-item "><h5>Concepteur Analyste</h5></li>
+                                        <li class="list-group-item"> PORT: 0690 621052 Gemail:gouvik@hotmail.com <li>
+                                    </ul>
+                                </div>
+                                <div class="row">     
+                                    <ul >
+                                        <li class="nav-item">
+                                        
+                                        <h5><p> PROFIL PROFESSIONNEL</p></h5> 
+                                            Concepteur Analyste développeur depuis 5 ans en accompagnement des
+                                            entreprises, diplômé du CNAM c'est l'aboutissement d'un long parcours alliant
+                                            la passion du savoir aux besoins de pratiquer.
+                                            Respectueux et à l'esprit d'initiative, efficace pour trouver des solutions fiables
+                                            aux problèmes logiciels.
+                                        </li>
+                                     
+                                   
+                                    </ul>
+                                </div>      
+                                <div class="row">    
+   
+                                     <ul >
+                                        <li class="nav-item">
+                                           <p><h5> FORMATION </p></h5>
+                                        </li>
+                                    </ul>  
+                                    <div class="col-2"> 
+                                        Juin 2021 – AOÛT 2021
+                                    </div>
+                                    <div class="col-6"> 
+                                            <h5><p>Attestation de suivi avec succès : Programmer l'internet des objets</p></h5>
+                                    </div>
+                                    <div class="col-4"> 
+                                                <h5><p>France Université Numérique, https://www.fun-mooc.fr</p></h5>
+                                    </div>  
+                                            
+                                    <div class="col-2"> 
+                                                    En cours
+                                    </div>
+                                    <div class="col-6"> 
+                                                        <h5><p>BAC+4 : Informatique Système d'Information</p></h5>
+                                                        </div>
+                                                        <div class="col-4"> 
+                                                            <h5><p> CNAM Paris</p></h5>
+                                    </div>
+                                    <div class="col-2"> 
+                                        2018
+                                    </div>
+                                    <div class="col-6"> 
+                                            <h5>Licence : Informatique Générale STS Parcours Système
+                                                d'Information Mention santé</h5>
+                                    </div>
+                                    <div class="col-4"> 
+                                                <h5><p>CNAM</p></h5>
+                                    </div>  
+                                    <div class="col-2"> 
+                                        JUIN 2008 – JUILLET 2008
+                                    </div>
+                                    <div class="col-6"> 
+                                            <h5>Formation De Formateur</h5>
+                                    </div>
+                                    <div class="col-4"> 
+                                                <h5>GIP DAIFI, POINTE A PITRE</h5>
+                                    </div> 
+
+                                    <div class="col-2"> 
+                                        JANVIER 1994 – MARS 1994
+                                    </div>
+                                    <div class="col-6"> 
+                                            <h5>Formation  BAC + 2/3 : Créateur D'entreprise</h5>
+                                    </div>
+                                    <div class="col-4"> 
+                                                <h5>LES ABYMES</h5>
+                                    </div>        
+                                    
+                                    <div class="col-2"> 
+                                        1981
+                                    </div>
+                                    <div class="col-6"> 
+                                            <h5> DEUG A : Mathématiques, Physique, Informatique</h5>
+                                    </div>
+                                    <div class="col-4"> 
+                                                <h5>GUADELOUPE</h5>
+                                    </div> 
+                                    
+                                    <div class="col-2"> 
+                                        1980
+                                    </div>
+                                    <div class="col-6"> 
+                                            <h5>  BAC F3 ELECTROTECHNIQUE</h5>
+                                    </div>
+                                    <div class="col-4"> 
+                                                <h5>LYCEE BAIMBRIDGE</h5>
+                                    </div>        
+                                </div>
+                                <div class="row">
+                                        <ul>
+                                                 <li class="nav-item">
+                                            <p><h5> LANGUES </p></h5>
+                                                </li>
+                                        </ul>   
+                                            <div class="col-2"> 
+                                                Anglais
+                                            </div>
+                                            <div class="col-6"> 
+                                                    <h5>  Anglais   Intermédiaire supérieur (B2) BULATS</h5>
+                                            </div>
+                                            <div class="col-4"> 
+                                                        <h5>CNAM</h5>
+                                            </div>        
+                                            <div class="col-2"> 
+                                                Anglais
+                                            </div>
+                                            <div class="col-6"> 
+                                                    <h5>  Anglais  en milieu professionnel (B2) BULATS</h5>
+                                            </div>
+                                            <div class="col-4"> 
+                                                        <h5>CNAM</h5>
+                                            </div>        
+                                            
+                                </div>        
+                            </div>
+                       
+                            {% endblock %}
+                        </main>    
+                    {% endblock %}
+                
+                </div>
+            </div>
+        </div>
+    {% endblock %} 
+</body>
+{% endblock %}
+
+
+
+
+{# endblock #}
+

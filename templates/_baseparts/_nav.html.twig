@@ -1,0 +1,63 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <!--On va surcharger la classe navbar-light dans styles.css-->
+
+  <a class="navbar-brand" href="#">ZAFE AN NOU</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <!--  <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+
+        <a class="nav-link" aria-current="page" href="{{path('accueil')}}">BYEN BONJOU</a>
+      </li>
+      <li class="nav-item">
+        <!--  <a class="nav-link" href="#">Link</a> -->
+        <a class="nav-link" href="{{path('kinou')}}"><i class="fas fa-sign-in-alt"></i> KINOU</a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="{{path('proje')}}"><i class="fas fa-sign-in-alt"></i>PROJE</a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="{{path('etat')}}"><i class="fas fa-sign-in-alt"></i> ETAT</a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="{{path('lide')}}"><i class="fas fa-sign-in-alt"></i> METLIDE</a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="{{path('forum')}}"><i class="fas fa-sign-in-alt"></i>FORUM</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">Dropdown </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+
+    <form class="d-flex col-3">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+  </div>
+
+</nav>

@@ -1,0 +1,253 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ParcoursController!{% endblock %}
+
+{% block body %}
+     {% block container %}
+        
+    <body class="mt-5">
+        {% include "_baseparts/_nav.html.twig" %}
+        
+        
+        
+
+            <div class="container-fluid">   
+                <div class="row">
+                    <div class="col-2 bg-success px-8"> <!-- Supprime padding - Pour coller au bloc main-->
+                        {% include "_partials/_sidebar.html.twig" %}
+                        {% block nav %}
+                        <img class="img-fluid" src="{{ asset('/assets/images/photo_vik.jpg')}}">
+                        <ul class="list-group>
+                            <a class="nav-link active" aria-current="page" href="{{path('olanousoti')}}">CONSTAT</a>
+    
+    
+                            <a href="{{path('kinou')}}" class="nav-link">Notre Groupe</a></li>
+                            <a href="{{path('fondalnou')}}" class="list-group-item" >Notre approche</a></li>
+                            <li >
+                                <p> FORMATION  </p>
+                            </li>
+                            <li>
+                                <p> FORMATION  </p>
+                            </li>
+                            <li>
+                                <p> LANGUES  </p>
+                            </li>
+                        {% endblock %} 
+                
+                    </div>
+                    <div class="col-10  px-0"> <!-- Supprime padding - Pour coller au bloc main-->
+                        
+                        {% block main %}
+                            <main> <!--section> class="px-5 py-4" class="bg-image" style="background-image: url('/assets/images/orchidee-en-fleursM.jpg');
+                                height: 100vh;"-->  
+                                {% block section %} 
+                                <div >
+                                    <ul >
+                                        <li class="nav-item">
+                                        <p>  VICTOR GOUDOU</p>
+                                            Concepteur Analyste
+                                            PORT 0690 621052 GOUVIK@HOTMAIL.COM
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            PROFIL PROFESSIONNEL
+                                            Concepteur Analyste développeur depuis 5 ans en accompagnement des
+                                            entreprises, diplômé du CNAM c'est l'aboutissement d'un long parcours alliant
+                                            la passion du savoir aux besoins de pratiquer.
+                                            Respectueux et à l'esprit d'initiative, efficace pour trouver des solutions fiables
+                                            aux problèmes logiciels.
+                                        </li>
+                                       
+                                    
+                                        
+                                        <li>
+                                            COMPÉTENCES
+                                        </li>    
+                                            Programmation langage objet :
+                                            PHP, JAVA, HTML, CSS, Objet
+                                            connectés 
+                                        </li>
+                                        <li>
+                                            • Base de données SQL
+                                        </li>
+                                        <li>
+                                            • Web, Système d'Information, Réseaux
+                                        </li>
+                                        <li>
+                                            • Développement de fonctionnalités
+                                        </li>
+                                        <li>
+                                            • Développement d'applications
+                                        </li>
+                                    </ul>
+                                
+                                    <div class="row">  
+                                       
+                                        <div >
+                                            <ul class="list-group list-group-horizontal">
+                                                 PARCOURS PROFESSIONNEL
+                                  
+                                                <li class="list-group-item col-2">JANVIER 2010 - DÉCEMBRE 2020 </li>
+                                                <li class="list-group-item co-2">
+                                                    <h5>Gérant - Analyste Informatique à B.I.T.S Sarl  Le Moule Guadeloupe </h5>
+                                                </li>
+                                                <li class="list-group-item">
+                                                        <ul>
+                                                            <li> Réalisation système d'information B.I.T.S (logiciel métier, site web)
+                                                            Projet d'informatisation de centre de formation, Auto-école,
+                                                            Ambulance
+                                                            </li>
+                                                            <li>
+                                                            Réalisation site web (association, personnel)
+                                                            Développement des applications spécifiques métiers.
+                                                            Identification de la demande et des besoins clients,
+                                                            Rédaction du cahier des charges.
+                                                            Conception, réalisation et maintenance d'applications web</li>
+                                                        </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group-horizontal">  
+                                                <li class="list-group-item w-30"> JANVIER 1994 - DÉCEMBRE 2009 </li>
+                                                <li class="list-group-item w-50"><h5><p>Entrepreneur Individuel En Informatique</p> à VM BUREAUTIQUE à LE MOULE Guadeloupe</h5></li>
+                                                <li class="list-group-item">
+                                                <ul>
+                                                    <li>Intégration des innovations technologiques et numériques, capacité à acquérir rapidement de nouvelles connaissances.</a> 
+                                                    Intervention sur des équipements d'accès aux réseaux
+                                                    comme le câblage, les prises ou les points d'accès des
+                                                    réseaux sans fil d'une entreprise en veillant à maintenir la
+                                                    continuité du service et en respectant les règles de gestion
+                                                    d'organisation et de sécurité applicables.</li> 
+                                                    <li> Remise en état d'un équipement informatique en ôtant le
+                                                    composant défectueux afin de le remplacer par un neuf et
+                                                    réalisation de tests finaux afin de vérifier le bon
+                                                    fonctionnement du matériel.</li> 
+                                                    <li>Intervention sur des dysfonctionnements matériels et logiciels
+                                                    en veillant à appliquer toutes les règles de sécurité requises
+                                                    afin d'éviter tout risque électrique et d'assurer la sauvegarde
+                                                    et la confidentialité des données.</li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group-horizontal">  
+                                                <li class="list-group-item w-30">JANVIER 1987-DÉCEMBRE 1992  </li>
+                                                <li class="list-group-item col-2"><h5><p>Technicien De Maintenance</p> | TRIMARG | Baie-Mahault |  Guadeloupe</h5></li>
+                                                <li class="list-group-item">
+                                                <li>
+                                                    
+                                                   <ul>
+                                                    <li> Maintenance préventive des équipements selon le planning,
+                                                    conseils en amélioration.</li>
+                                                     Entretien courant et dépannage des équipements sur les sites
+                                                    clients, prestations de maintenance conformes aux
+                                                    exigences de l'entreprise.</li>
+                                                    <li> Formation des utilisateurs à la prise en main des équipements
+                                                    (présentation générale, procédures d'utilisation),
+                                                    sensibilisation aux règles de sécurité.  </li>
+                                                   </ul> 
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group-horizontal">  
+                                                <li class="list-group-item w-30">JANVIER 1985-DÉCEMBRE 1992 </li>
+                                                <li class="list-group-item col-2"><h5><p>Technicien De Maintenance</p> | SOCAL | Baie-Mahault |  Guadeloupe</h5></li>
+                                                <li class="list-group-item">
+                                                
+                                                    <ul>
+                                                        <li>Système de reproduction, copie, système d'écriture</li>
+                                                        <li>Formation des utilisateurs à la prise en main des équipements
+                                                        (présentation générale, procédures d'utilisation),
+                                                        sensibilisation aux règles de sécurité.</li>
+                                                        <li>Maintenance préventive des équipements selon le planning
+                                                        (réglages, nettoyage, graissage, changement de pièces),
+                                                        conseils en amélioration.</li>
+                                                        <li>Entretien courant et dépannage des équipements sur les sites
+                                                        clients, prestations de maintenance conformes aux
+                                                        exigences de l'entreprise.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group-horizontal">  
+                                                <li class="list-group-item w-30">SEPTEMBRE 1982-NOVEMBRE 1983 </li>
+                                                <li class="list-group-item col-2"><h5><p>Technicien De Maintenance Electronique</p> | SIMAT | Baie-Mahault |  Guadeloupe</h5></li>
+                                                <li class="list-group-item">
+                                                <li>
+                                                    
+                                                    <ul>
+                                                    Intervention de maintenance corrective sur le parc de
+                                                    machines, réparation des anomalies et des pannes en
+                                                    optimisant le retour à la normale.
+                                                    Maintenance préventive des équipements selon le planning
+                                                    (réglages, nettoyage, graissage, changement de pièces),
+                                                    conseils en amélioration.
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>      
+                                    
+
+                                    <div class="row">
+                                        FORMATION
+                                        <div class="col-2">
+                                     
+                                            2021 – AOÛT 2021 
+                                            Attestation de suivi avec succès : Programmer l'internet des objets
+                                            France Université Numérique, https://www.fun-mooc.fr
+                                        </div>        
+                                        <div class="col-10"></div>       
+                                      
+                                                <li><a >
+                                                    <p> En cours
+                                                        BAC+4 : Informatique Système d'Information <span> CNAM Paris</span> </p>
+                                                    
+                                                </a></li>
+                                                <li><a >
+                                                    /2018
+                                                    Licence : Informatique Générale STS Parcours Système
+                                                        d'Information Mention santé
+                                                </a></li>
+                                                <li><a >
+                                                    JUIN 2008 – JUILLET 2008
+                                                    Formation De Formateur
+                                                    GIP DAIFI, POINTE A PITRE
+                                                </a></li>
+
+                                                <li><a >
+                                                    JANVIER 1994 – MARS 1994
+                                                    BAC + 2/3 : Créateur D'entreprise
+                                                    LES ABYMES
+                                                </a></li> 
+                                                <li>
+                                                    /1981
+                                                    DEUG A : Mathématiques, Physique, Informatique
+                                                    Guadeloupe
+                                                </li>
+                                                <li>
+                                                    /1980
+                                                    BAC F3 : Informatique
+                                                    Pointe À Pitre – Electrotechnique
+                                                </li>
+                                                
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        LANGUES
+                                    
+                                    <li class="nav-item">
+                                        Anglais   Intermédiaire supérieur (B2) BULATS
+                                    </li>
+                                    <li>
+                                        Anglais en milieu professionnel UE ANG300 du CNAM
+                                    </li>
+                                    </ul>
+                                </div>
+                           
+                                {% endblock %}
+                            </main>    
+                        {% endblock %}
+                    
+                    </div>
+                </div>
+            </div>
+        {% endblock %} 
+    </body>
+{% endblock %}

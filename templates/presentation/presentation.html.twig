@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Presentation{% endblock %}
+
+{% block container %}
+        
+<body class="mt-5">
+    {% include "_baseparts/_nav.html.twig" %}
+    {% block body %}
+    
+    
+
+        <div class="container-fluid">   
+            <div class="row">
+                <div class="col-2 bg-success px-8"> <!-- Supprime padding - Pour coller au bloc main-->
+                    {% include "_partials/_sidebar.html.twig" %}
+                    {% block nav %}
+                    <img class="img-fluid" src="{{ asset('/assets/images/photo_vik.jpg')}}">
+                    <ul>
+                                          <!-- Background image --> 
+                        <li>
+                            <p> FORMATION  </p>
+                        </li>
+                        <li>
+                            <p> FORMATION  </p>
+                        </li>
+                        <li>
+                            <p> LANGUES  </p>
+                        </li>
+                    {% endblock %} 
+            
+                </div>
+                <div class="col-10 bg-light px-5"> <!-- Supprime padding - Pour coller au bloc main-->
+                    
+                    {% block main %}
+                        <main> <!--section> class="px-5 py-4" class="bg-image" style="background-image: url('/assets/images/orchidee-en-fleursM.jpg');
+                            height: 100vh;"-->  
+                            {% block section %} 
+                            <div class="row">
+                                
+                                <div>
+                                    <ul class="list-group list-group-horizontal position-center">  
+                                        <li class="list-group-item">VICTOR GOUDOU </li>
+                                        <li class="list-group-item "><h5>Concepteur Analyste</h5></li>
+                                        <li class="list-group-item"> PORT: 0690 621052 Gemail:gouvik@hotmail.com <li>
+                                    </ul>
+                            </div>
+                            <div class="row">     
+                                <ul >
+                                    <li class="nav-item">
+                                    
+                                       <h5><p> PROFIL PROFESSIONNEL</p></h5> 
+                                        Concepteur Analyste développeur depuis 5 ans en accompagnement des
+                                        entreprises, diplômé du CNAM c'est l'aboutissement d'un long parcours alliant
+                                        la passion du savoir aux besoins de pratiquer.
+                                        Respectueux et à l'esprit d'initiative, efficace pour trouver des solutions fiables
+                                        aux problèmes logiciels.
+                                    </li>
+                            </div>     
+                                    COMPÉTENCES
+                                    <li class="nav-item">
+                                    
+                                        Programmation langage objet :
+                                        PHP, JAVA, HTML, CSS, Objet
+                                        connectés 
+                                    </li>
+                                    <li>
+                                        Base de données SQL
+                                    </li>
+                                    <li>
+                                         Web, Système d'Information, Réseaux
+                                    </li>
+                                    <li>
+                                        Développement de fonctionnalités
+                                    </li>
+                                    <li>
+                                        Développement d'applications
+                                    </li>
+                                </ul>
+                            </div>      
+                           
+                            {% endblock %}
+                        </main>    
+                    {% endblock %}
+                
+                </div>
+            </div>
+        </div>
+    {% endblock %} 
+</body>
+{% endblock %}

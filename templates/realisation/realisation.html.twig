@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RealisationController!{% endblock %}
+    {% block container %}
+        
+<body class="mt-5">
+    {% include "_baseparts/_nav.html.twig" %}
+    
+
+    {% block body %}
+        <div class="container-fluid">   
+                <div class="row">
+                    <div class="col-2 bg-success px-8"> <!-- Supprime padding - Pour coller au bloc main-->
+                        {% include "_partials/_sidebar.html.twig" %}
+                        {% block nav %}
+                            <img class="img-fluid" src="{{ asset('/assets/images/photo_vik.jpg')}}">
+                            <ul>
+                                            <!-- Background image --> 
+                                <li>
+                                    <p> PRESENTATION  </p>
+                                </li>
+                                <li>
+                                    <p> FORMATIONS  </p>
+                                </li>
+                                <li>
+                                    <p> PARCOURS  </p>
+                                </li>
+                                <li>
+                                    <p>REALISATIONS </p>
+                                </li>
+                                <li>
+                                    <p> LANGUES  </p>
+                                </li>
+                            </ul>
+                        {% endblock %} 
+                
+                    </div>
+                        <div class="col-10 bg-light px-5"> <!-- Supprime padding - Pour coller au bloc main-->
+                        
+                        {% block main %}
+                            <main> <!--section> class="px-5 py-4" class="bg-image" style="background-image: url('/assets/images/orchidee-en-fleursM.jpg');
+                                height: 100vh;"-->  
+                                {% block section %} 
+                                <div class="row">
+                                    
+                                    <div>
+                                        <ul class="list-group list-group-horizontal position-center">  
+                                            <li class="list-group-item">VICTOR GOUDOU </li>
+                                            <li class="list-group-item "><h5>Concepteur Analyste</h5></li>
+                                            <li class="list-group-item"> PORT: 0690 621052 Gemail:gouvik@hotmail.com <li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">     
+                                        <ul >
+                                            <li class="nav-item">
+                                            
+                                            <h5><p> PROFIL PROFESSIONNEL</p></h5> 
+                                                Concepteur Analyste développeur depuis 5 ans en accompagnement des
+                                                entreprises, diplômé du CNAM c'est l'aboutissement d'un long parcours alliant
+                                                la passion du savoir aux besoins de pratiquer.
+                                                Respectueux et à l'esprit d'initiative, efficace pour trouver des solutions fiables
+                                                aux problèmes logiciels.
+                                            </li>
+                                        
+                                    
+                                        </ul>
+                                    </div>      
+                                    <div class="row">    
+    
+                                        <ul >
+                                            <li class="nav-item">
+                                            <p><h5> REALISATION </p></h5>
+                                            </li>
+                                        </ul>  
+
+
+                                        <div class="row">  
+                                       
+                                        
+
+                                        <div class="col-2"> 
+                                            2018
+                                        </div>
+                                        <div class="col-6"> 
+                                                <h5><p> Projet d'informatisation BITS </p></h5>
+                                        </div>
+                                        <div class="col-4"> 
+                                                    <h5><p>lien Git https://www.fun-mooc.fr</p></h5>
+                                        </div>  
+                                                
+                                        <div class="col-2"> 
+                                                       2018
+                                        </div>
+                                        <div class="col-6"> 
+                                                            <h5><p>Réalisation système d'information B.I.T.S (logiciel métier, site web)</p></h5>
+                                                            </div>
+                                                            <div class="col-4"> 
+                                                                <h5><p> <h5><p>lien Git https://www.fun-mooc.fr</p></h5></p></h5>
+                                        </div>
+                                        <div class="col-2"> 
+                                            
+                                        </div>
+                                        <div class="col-6"> 
+                                                <h5>Portfolio avec symfony</h5>
+                                        </div>
+                                        <div class="col-4"> 
+                                                    <h5><p>Victor</p></h5>
+                                        </div>  
+                                        
+                                                
+                                    </div>        
+                                </div>
+                        
+                                {% endblock %}
+                            </main>    
+                        {% endblock %}
+                    
+                    </div>
+                </div>
+            </div>
+        {% endblock %} 
+</body>
+{% endblock %}
+
