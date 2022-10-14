@@ -15,17 +15,24 @@
                 <div class="col-2 bg-success px-8"> <!-- Supprime padding - Pour coller au bloc main-->
                     {% include "_partials/_sidebar.html.twig" %}
                     {% block nav %}
+                        <div>
                         <img class="img-fluid" src="{{ asset('/assets/images/photo_vik.jpg')}}">
+                        </div>
                         <ul>
-                                          <!-- Background image --> 
                             <li>
-                                <p> FORMATION  </p>
-                            </li>
-                            <li>
-                                <p> FORMATION  </p>
-                            </li>
-                            <li>
-                                <p> LANGUES  </p>
+                                    <p> PRESENTATION  </p>
+                                </li>
+                                <li>
+                                    <p> FORMATIONS  </p>
+                                </li>
+                                <li>
+                                    <p> PARCOURS  </p>
+                                </li>
+                                <li>
+                                    <p>REALISATIONS </p>
+                                </li>
+                                <li>
+                                    <p> LANGUES  </p>
                             </li>
                         </ul>
                     {% endblock %} 
